@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unique_id: 
+  f_name: 
+  m_name: 
+  l_name: 
+  email: 
+  kind: MyString
+
+two:
+  unique_id: 
+  f_name: 
+  m_name: 
+  l_name: 
+  email: 
+  kind: MyString

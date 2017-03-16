@@ -1,0 +1,12 @@
+<%=provide(:title, "All subjects") %>
+<h1> All subjects </h1>
+
+<%=will_paginate%>
+
+<u1 class="subjects">
+  <%@subjects.each do |subject| %>
+    <%= render subject %>
+  <%end%>
+</u1>
+
+<%=will_paginate%>

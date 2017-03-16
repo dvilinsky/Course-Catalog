@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  code: 
+  instr_id: 
+  unique_id: 
+  name: 
+  description: 
+  term: 
+  king: MyString
+
+two:
+  code: 
+  instr_id: 
+  unique_id: 
+  name: 
+  description: 
+  term: 
+  king: MyString
