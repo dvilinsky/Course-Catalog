@@ -3,9 +3,24 @@
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        
         <%= @user.name %>
       </h1>
    </section>
  </aside>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="colo-md-12">
+        <h3> You are enrolled in: </h3>
+      </div>
+    </div>
+    <u1>
+      <%@user.courses.each do |course| %>
+        <!-- TODO: Create show action for courses -->
+        <li> <%=link_to course.name, course_path(course.id)%> </li>
+      <%end%>
+    </ul>
+  </div>
 </div>

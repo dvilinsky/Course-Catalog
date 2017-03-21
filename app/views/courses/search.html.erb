@@ -1,0 +1,8 @@
+<%provide(:title, "Search Results") %>
+<h1> Here are the results of your search </h1>
+
+<u1 class="courses">
+  <%@courses.each do |course| %>
+    <%= render course %>
+  <%end%>
+</u1>

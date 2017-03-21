@@ -35,6 +35,15 @@ end
     @users = User.paginate(page: params[:page])
   end
 
+  def home
+    if logged_in?
+      @user = current_user
+      render 'show'
+    else
+      render 'static_pages/home'
+    end
+  end
+
   private
       def user_params
         params.require(:user).permit(:name, :email, :password, :password_confirmation)

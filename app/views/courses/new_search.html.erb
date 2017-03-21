@@ -1,0 +1,16 @@
+<%provide(:title, "Search for courses") %>
+<h1> Search for courses </h1>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_tag({action: "search", controller: "courses"}, method: "get") do %>
+      <%= label_tag(:subject_id, "Choose the subject (optional):") %>
+      <%= select_tag(:subject_id, options_from_collection_for_select(Subject.all,
+                                  :id, :name), include_blank: true) %>
+
+      <%= label_tag(:course_name, "Enter the code for the course you want. It must be exact.") %>
+      <%=text_field_tag(:course_name) %>
+      <%= submit_tag("Search") %>
+    <% end %>
+  </div>
+</div>

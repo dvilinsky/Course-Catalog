@@ -2,4 +2,6 @@
   <b>Name: </b><%= course.name%><br>
   <b>Code: </b><%= course.code%><br>
   <b>Description: </b> <%= course.description %>
+  <br> 
+  <%= link_to "Enroll", new_enrollment_path(course), class: "btn btn-primary" %>
 </li>

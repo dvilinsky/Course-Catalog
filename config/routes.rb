@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'static_pages#home'
+  root 'users#home'
 
   get 'signup' => 'users#new'
 
@@ -9,6 +9,10 @@ Rails.application.routes.draw do
   resources :courses
   resources :subjects
   resources :instructors
+  resources :enrollments
+
+  get 'search' => 'courses#search'
+  get 'new_search' => 'courses#new_search'
 
   get 'help' => 'static_pages#help'
 
